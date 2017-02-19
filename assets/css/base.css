@@ -357,6 +357,41 @@ body {
   border-bottom-color: inherit;
 }
 
+.nav-is-visible .my-marker {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* these are the colors of the markers - line + arrow */
+.color-1 {
+  color: #9a57bd;
+  background-color: #9a57bd;
+}
+
+.color-2 {
+  color: #c96aa4;
+  background-color: #c96aa4;
+}
+
+.color-3 {
+  color: #d6915e;
+  background-color: #d6915e;
+}
+
+.color-4 {
+  color: #5397c7;
+  background-color: #5397c7;
+}
+
+.color-5 {
+  color: #77cd91;
+  background-color: #77cd91;
+}
+
+
 
 
 
