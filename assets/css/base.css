@@ -290,6 +290,21 @@ body {
   transition: opacity 0.5s 0s, visibility 0s 0.5s;
 }
 
+@media only screen and (min-width: 768px) {
+  .my-3d-nav a {
+    padding: 7.6em 1em 0;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* truncate text with ellipsis if too long */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
 
 
 
