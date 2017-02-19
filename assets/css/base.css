@@ -80,6 +80,21 @@ body {
     transition: background 0.2s 0.5s;
 }
 
+.my-3d-nav-trigger span::before, .cd-3d-nav-trigger span:after {
+  /* these are the upper and lower lines */
+  content: '';
+  left: 0;
+  -webkit-transition: -webkit-transform 0.2s 0.5s;
+  -moz-transition: -moz-transform 0.2s 0.5s;
+  transition: transform 0.2s 0.5s;
+}
+
+.my-3d-nav-trigger span::before {
+  bottom: 8px;
+}
+.my-3d-nav-trigger span::after {
+  top: 8px;
+}
 
 
 
