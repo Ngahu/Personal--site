@@ -260,6 +260,35 @@ body {
 }
 
 
+.no-touch .my-3d-nav a:hover {
+  background-color: #2b3145;
+}
+.cd-3d-nav .my-selected a {
+  background-color: #212635;
+}
+.no-touch .my-3d-nav .cd-selected a:hover {
+  background-color: #212635;
+}
+.my-3d-nav .my-selected a::before {
+  background-position: 0 -32px;
+}
+.nav-is-visible .my-3d-nav {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+
+.nav-is-visible .my-3d-nav::after {
+  /* menu cover layer - hide it when navigation is visible */
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s 0s, visibility 0s 0.5s;
+  -moz-transition: opacity 0.5s 0s, visibility 0s 0.5s;
+  transition: opacity 0.5s 0s, visibility 0s 0.5s;
+}
 
 
 
