@@ -156,6 +156,40 @@ body {
   transition: transform 0.5s 0s, visibility 0.5s 0s;
 }
 
+@media only screen and (min-width: 768px) {
+  .my-3d-nav-container {
+    height: 170px;
+  }
+}
+
+.my-3d-nav {
+    /* this is the 3D rotating navigation */
+    position:relative;
+    height:100%;
+    background-color: #343c55;
+    /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+}
+}
 
 
 
