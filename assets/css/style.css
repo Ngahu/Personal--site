@@ -1,7 +1,5 @@
 /* --------------------------------
 
-Primary style
-
 -------------------------------- */
 *, *::after, *::before {
   box-sizing: border-box;
@@ -15,6 +13,7 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   background-color: #485274;
+  min-height: 61px;
 }
 
 a {
